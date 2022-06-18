@@ -1,4 +1,4 @@
-export const query = [
+export const result = [
     {
         query:"select * from product;",
         output: [
@@ -929,7 +929,7 @@ export const query = [
           ]
     },
     {
-        query:"select * from product where supplierID=2;",
+        query:"select * from product where supplierID = 2;",
         output: [
             {
                 "productID":"4",
@@ -982,7 +982,7 @@ export const query = [
         ]
     },
     {
-        query:"select * from product where unitPrice = (select max(unitPrice) from product);",
+        query:"select * from product where productID = 9;",
         output:[
             {
                 "productID": 9,
@@ -998,7 +998,7 @@ export const query = [
               }
         ]
     },
-    {
+    { 
         query:"select * from product where unitsInStock < 10",
         output: [
             {
@@ -1075,4 +1075,11 @@ export const query = [
             }
         ]
     }
+];
+
+export const queryList = [
+ {"query":"select * from product;"},
+ {"query":"select * from product where supplierID = 2;"},
+ {"query":"select * from product where productID = 9;"},
+ {"query":"select * from product where unitsInStock < 10"}
 ];
