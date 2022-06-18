@@ -6,7 +6,7 @@ import { queryList} from '../utils/queryResults';
 const { Sider } = Layout;
 
 //left drawer
-export default function Drawer({query,setQuery,toggleRes,setToggleRes}){
+export default function LeftDrawer({query,setQuery,toggleRes,setToggleRes}){
   
   //get query by menu items & toggle table result 
   const onClick = (e) => {

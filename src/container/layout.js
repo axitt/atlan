@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import '../App.css';
-import { Layout, Button, Row, Col, Input, message, Space } from 'antd';
+import { Layout, Button, Row, Col, Input, message, Tooltip, Drawer } from 'antd';
 import Nav from '../component/header';
 import Foot from '../component/footer';
-import Drawer from '../component/drawer';
+import LeftDrawer from '../component/drawer';
 import TableResult from '../component/table';
 import { result } from '../utils/queryResults';
 const { Content} = Layout;
@@ -11,10 +11,11 @@ const { TextArea } = Input;
 
 //sections and subsections
 function PageLayout(){
-    const [query, setQuery] = useState('');
-    const [toggleRes, setToggleRes] = useState(false);
-    /*var items = query.length>0?result.find(item => item.id==query)["query"]:'';*/
-
+    const [query, setQuery] = useState('');//sql query
+    const [toggleRes, setToggleRes] = useState(false);//for table display
+    const [data, setData] = useState([]);//out for sql query
+    const [history, setHistory] = useState([]);//run history
+    const [visible, setVisible] = useState(false);//history drawer visible
     //copy to clipboard
     const copy = async () => {
       try{
@@ -26,9 +27,19 @@ function PageLayout(){
     }
     //------
 
+    //history drawer
+    const showDrawer = () => {
+      setVisible(true);
+    };
+  
+    const onClose = () => {
+      setVisible(false);
+    };
+    //-------
+
     return (<Layout className="layout">
     <Layout>
-      <Drawer query={query} setQuery={setQuery} toggleRes={toggleRes} setToggleRes={setToggleRes}/>
+      <LeftDrawer query={query} setQuery={setQuery} toggleRes={toggleRes} setToggleRes={setToggleRes}/>
       <Layout>
         <Nav/>
         
@@ -38,9 +49,22 @@ function PageLayout(){
                 <Col span={24}>
                   <div className="controlNav">
                     <Row justify="end" className="featureBtn" align="middle">
-                      <Col style={{marginRight:'14px'}}><i onClick={copy} className="far fa-copy "></i></Col>
-                      <Col style={{marginRight:'14px'}}><i onClick={ () => {setQuery('');setToggleRes(false);message.success('Cleared');}} className="fas fa-trash-alt"></i></Col>
-                      <Col style={{marginRight:'14px'}}><i className='fas fa-history'></i></Col>
+                      <Col style={{marginRight:'14px'}}><Tooltip placement="bottom" title="Copy"><i onClick={copy} className="far fa-copy "></i></Tooltip></Col>
+                      <Col style={{marginRight:'14px'}}><Tooltip placement="bottom" title="Clear"><i onClick={ () => {setQuery('');setToggleRes(false);message.success('Cleared');}} className="fas fa-trash-alt"></i></Tooltip></Col>
+                      <Col style={{marginRight:'14px'}}><Tooltip placement="bottom" title="History"><i onClick={showDrawer} className='fas fa-history'></i>
+                        <Drawer title="History" placement="right" onClose={onClose} visible={visible}>
+                          {history.map((e, i) => (
+                            <p className='historyPara' onClick={async()=>{
+                              try{
+                                await navigator.clipboard.writeText(e);
+                                message.success('Copied');
+                              }catch(err){
+                                message.error('Error Occured');
+                              }
+                            }} key={e + i}>{e}</p>
+                          ))}
+                        </Drawer></Tooltip>
+                      </Col>
                     </Row>
                   </div>
                 </Col>
@@ -64,19 +88,19 @@ function PageLayout(){
                   autoFocus={true}
                   style={{paddingBottom:'5px'}}
                   value={query}
-                  onChange={e => setQuery(e.target.value)}
+                  onChange={e => {setQuery(e.target.value);setToggleRes(false);setData([])}}
                   placeholder="write your query here ...."
                   autoSize={{
                     minRows: 10,
                     maxRows: 10,
                   }}
-                  />{console.log(query)}
+                  />
                 </Col>
               </Row>
             </div>
             <div className="run-export">
               <Row type="flex" justify="end">
-                <Col style={{marginRight:'16px'}}><Button onClick={ () => setToggleRes(true)} type="primary">Run Code</Button></Col>
+                <Col style={{marginRight:'16px'}}><Button onClick={ () => {setHistory(history => [...history,query]); setToggleRes(true);setData(query.length>0?result.find(item => item.query==query)["output"]:[]); }} type="primary">Run Code</Button></Col>
                 <Col><Button onClick={ () => {setQuery('');setToggleRes(false);message.success('Cleared');}}>Reset</Button></Col>
               </Row>
             </div>  
@@ -87,9 +111,7 @@ function PageLayout(){
     <Layout>
       <Content>
       <div className="site-layout-background" style={{padding: 24, minHeight: 300 }}>
-
-      {toggleRes?<TableResult />:<></>}
-
+      {toggleRes?<TableResult data={data}/>:<></>}
       </div>
       </Content>
     </Layout>

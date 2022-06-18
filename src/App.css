@@ -1,5 +1,14 @@
 @import '~antd/dist/antd.css';
 
+.historyPara{
+  color: #1890ff;
+}
+
+.historyPara:hover{
+  font-size: 15px;
+  cursor: copy;
+}
+
 .featureBtn{
   height: 40px;
   font-size: 20px;

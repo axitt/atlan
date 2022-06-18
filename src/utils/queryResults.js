@@ -3,6 +3,7 @@ export const result = [
         query:"select * from product;",
         output: [
             {
+              "key":1,
               "productID": 1,
               "productName": "Chai",
               "supplierID": 1,
@@ -15,6 +16,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":2,
               "productID": 2,
               "productName": "Chang",
               "supplierID": 1,
@@ -27,6 +29,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":3,
               "productID": 3,
               "productName": "Aniseed Syrup",
               "supplierID": 1,
@@ -39,6 +42,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":4,
               "productID": 4,
               "productName": "Chef Anton's Cajun Seasoning",
               "supplierID": 2,
@@ -51,6 +55,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":5,
               "productID": 5,
               "productName": "Chef Anton's Gumbo Mix",
               "supplierID": 2,
@@ -63,6 +68,7 @@ export const result = [
               "discontinued": 1
             },
             {
+              "key":6,
               "productID": 6,
               "productName": "Grandma's Boysenberry Spread",
               "supplierID": 3,
@@ -75,6 +81,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":7,
               "productID": 7,
               "productName": "Uncle Bob's Organic Dried Pears",
               "supplierID": 3,
@@ -87,6 +94,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":8,
               "productID": 8,
               "productName": "Northwoods Cranberry Sauce",
               "supplierID": 3,
@@ -99,6 +107,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":9,
               "productID": 9,
               "productName": "Mishi Kobe Niku",
               "supplierID": 4,
@@ -111,6 +120,7 @@ export const result = [
               "discontinued": 1
             },
             {
+              "key":10,
               "productID": 10,
               "productName": "Ikura",
               "supplierID": 4,
@@ -123,6 +133,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":11,
               "productID": 11,
               "productName": "Queso Cabrales",
               "supplierID": 5,
@@ -135,6 +146,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":12,
               "productID": 12,
               "productName": "Queso Manchego La Pastora",
               "supplierID": 5,
@@ -147,6 +159,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":13,
               "productID": 13,
               "productName": "Konbu",
               "supplierID": 6,
@@ -159,6 +172,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":14,
               "productID": 14,
               "productName": "Tofu",
               "supplierID": 6,
@@ -171,6 +185,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":15,
               "productID": 15,
               "productName": "Genen Shouyu",
               "supplierID": 6,
@@ -183,6 +198,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":16,
               "productID": 16,
               "productName": "Pavlova",
               "supplierID": 7,
@@ -195,6 +211,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":17,
               "productID": 17,
               "productName": "Alice Mutton",
               "supplierID": 7,
@@ -207,6 +224,7 @@ export const result = [
               "discontinued": 1
             },
             {
+              "key":18,
               "productID": 18,
               "productName": "Carnarvon Tigers",
               "supplierID": 7,
@@ -219,6 +237,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":19,
               "productID": 19,
               "productName": "Teatime Chocolate Biscuits",
               "supplierID": 8,
@@ -231,6 +250,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":20,
               "productID": 20,
               "productName": "Sir Rodney's Marmalade",
               "supplierID": 8,
@@ -243,6 +263,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":21,
               "productID": 21,
               "productName": "Sir Rodney's Scones",
               "supplierID": 8,
@@ -255,6 +276,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":22,
               "productID": 22,
               "productName": "Gustaf's Knäckebröd",
               "supplierID": 9,
@@ -267,6 +289,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":23,
               "productID": 23,
               "productName": "Tunnbröd",
               "supplierID": 9,
@@ -279,6 +302,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":24,
               "productID": 24,
               "productName": "Guaraná Fantástica",
               "supplierID": 10,
@@ -291,6 +315,7 @@ export const result = [
               "discontinued": 1
             },
             {
+              "key":25,
               "productID": 25,
               "productName": "NuNuCa Nuß-Nougat-Creme",
               "supplierID": 11,
@@ -303,6 +328,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":26,
               "productID": 26,
               "productName": "Gumbär Gummibärchen",
               "supplierID": 11,
@@ -315,6 +341,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":27,
               "productID": 27,
               "productName": "Schoggi Schokolade",
               "supplierID": 11,
@@ -327,6 +354,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":28,
               "productID": 28,
               "productName": "Rössle Sauerkraut",
               "supplierID": 12,
@@ -339,6 +367,7 @@ export const result = [
               "discontinued": 1
             },
             {
+              "key":29,
               "productID": 29,
               "productName": "Thüringer Rostbratwurst",
               "supplierID": 12,
@@ -351,6 +380,7 @@ export const result = [
               "discontinued": 1
             },
             {
+              "key":30,
               "productID": 30,
               "productName": "Nord-Ost Matjeshering",
               "supplierID": 13,
@@ -363,6 +393,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":31,
               "productID": 31,
               "productName": "Gorgonzola Telino",
               "supplierID": 14,
@@ -375,6 +406,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":32,
               "productID": 32,
               "productName": "Mascarpone Fabioli",
               "supplierID": 14,
@@ -387,6 +419,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":33,
               "productID": 33,
               "productName": "Geitost",
               "supplierID": 15,
@@ -399,6 +432,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":34,
               "productID": 34,
               "productName": "Sasquatch Ale",
               "supplierID": 16,
@@ -411,6 +445,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":35,
               "productID": 35,
               "productName": "Steeleye Stout",
               "supplierID": 16,
@@ -423,6 +458,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":36,
               "productID": 36,
               "productName": "Inlagd Sill",
               "supplierID": 17,
@@ -435,6 +471,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":37,
               "productID": 37,
               "productName": "Gravad lax",
               "supplierID": 17,
@@ -447,6 +484,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":38,
               "productID": 38,
               "productName": "Côte de Blaye",
               "supplierID": 18,
@@ -459,6 +497,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":39,
               "productID": 39,
               "productName": "Chartreuse verte",
               "supplierID": 18,
@@ -471,6 +510,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":40,
               "productID": 40,
               "productName": "Boston Crab Meat",
               "supplierID": 19,
@@ -483,6 +523,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":41,
               "productID": 41,
               "productName": "Jack's New England Clam Chowder",
               "supplierID": 19,
@@ -495,6 +536,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":42,
               "productID": 42,
               "productName": "Singaporean Hokkien Fried Mee",
               "supplierID": 20,
@@ -507,6 +549,7 @@ export const result = [
               "discontinued": 1
             },
             {
+              "key":43,
               "productID": 43,
               "productName": "Ipoh Coffee",
               "supplierID": 20,
@@ -519,6 +562,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":44,
               "productID": 44,
               "productName": "Gula Malacca",
               "supplierID": 20,
@@ -531,6 +575,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":45,
               "productID": 45,
               "productName": "Rogede sild",
               "supplierID": 21,
@@ -543,6 +588,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":46,
               "productID": 46,
               "productName": "Spegesild",
               "supplierID": 21,
@@ -555,6 +601,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":47,
               "productID": 47,
               "productName": "Zaanse koeken",
               "supplierID": 22,
@@ -567,6 +614,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":48,
               "productID": 48,
               "productName": "Chocolade",
               "supplierID": 22,
@@ -579,6 +627,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":49,
               "productID": 49,
               "productName": "Maxilaku",
               "supplierID": 23,
@@ -591,6 +640,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":50,
               "productID": 50,
               "productName": "Valkoinen suklaa",
               "supplierID": 23,
@@ -603,6 +653,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":51,
               "productID": 51,
               "productName": "Manjimup Dried Apples",
               "supplierID": 24,
@@ -615,6 +666,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":52,
               "productID": 52,
               "productName": "Filo Mix",
               "supplierID": 24,
@@ -627,6 +679,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":53,
               "productID": 53,
               "productName": "Perth Pasties",
               "supplierID": 24,
@@ -639,6 +692,7 @@ export const result = [
               "discontinued": 1
             },
             {
+              "key":54,
               "productID": 54,
               "productName": "Tourtière",
               "supplierID": 25,
@@ -651,6 +705,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":55,
               "productID": 55,
               "productName": "Pâté chinois",
               "supplierID": 25,
@@ -663,6 +718,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":56,
               "productID": 56,
               "productName": "Gnocchi di nonna Alice",
               "supplierID": 26,
@@ -675,6 +731,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":57,
               "productID": 57,
               "productName": "Ravioli Angelo",
               "supplierID": 26,
@@ -687,6 +744,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":58,
               "productID": 58,
               "productName": "Escargots de Bourgogne",
               "supplierID": 27,
@@ -699,6 +757,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":59,
               "productID": 59,
               "productName": "Raclette Courdavault",
               "supplierID": 28,
@@ -711,6 +770,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":60,
               "productID": 60,
               "productName": "Camembert Pierrot",
               "supplierID": 28,
@@ -723,6 +783,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":61,
               "productID": 61,
               "productName": "Sirop d'érable",
               "supplierID": 29,
@@ -735,6 +796,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":62,
               "productID": 62,
               "productName": "Tarte au sucre",
               "supplierID": 29,
@@ -747,6 +809,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":63,
               "productID": 63,
               "productName": "Vegie-spread",
               "supplierID": 7,
@@ -759,6 +822,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":64,
               "productID": 64,
               "productName": "Wimmers gute Semmelknödel",
               "supplierID": 12,
@@ -771,6 +835,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":65,
               "productID": 65,
               "productName": "Louisiana Fiery Hot Pepper Sauce",
               "supplierID": 2,
@@ -783,6 +848,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":66,
               "productID": 66,
               "productName": "Louisiana Hot Spiced Okra",
               "supplierID": 2,
@@ -795,6 +861,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":67,
               "productID": 67,
               "productName": "Laughing Lumberjack Lager",
               "supplierID": 16,
@@ -807,6 +874,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":68,
               "productID": 68,
               "productName": "Scottish Longbreads",
               "supplierID": 8,
@@ -819,6 +887,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":69,
               "productID": 69,
               "productName": "Gudbrandsdalsost",
               "supplierID": 15,
@@ -831,6 +900,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":70,
               "productID": 70,
               "productName": "Outback Lager",
               "supplierID": 7,
@@ -843,6 +913,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":71,
               "productID": 71,
               "productName": "Flotemysost",
               "supplierID": 15,
@@ -855,6 +926,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":72,
               "productID": 72,
               "productName": "Mozzarella di Giovanni",
               "supplierID": 14,
@@ -867,6 +939,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":73,
               "productID": 73,
               "productName": "Röd Kaviar",
               "supplierID": 17,
@@ -879,6 +952,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":74,
               "productID": 74,
               "productName": "Longlife Tofu",
               "supplierID": 4,
@@ -891,6 +965,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":75,
               "productID": 75,
               "productName": "Rhönbräu Klosterbier",
               "supplierID": 12,
@@ -903,6 +978,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":76,
               "productID": 76,
               "productName": "Lakkalikööri",
               "supplierID": 23,
@@ -915,6 +991,7 @@ export const result = [
               "discontinued": 0
             },
             {
+              "key":77,
               "productID": 77,
               "productName": "Original Frankfurter grüne Soße",
               "supplierID": 12,
@@ -999,7 +1076,7 @@ export const result = [
         ]
     },
     { 
-        query:"select * from product where unitsInStock < 10",
+        query:"select * from product where unitsInStock < 10;",
         output: [
             {
                 "productID":"5",
@@ -1081,5 +1158,5 @@ export const queryList = [
  {"query":"select * from product;"},
  {"query":"select * from product where supplierID = 2;"},
  {"query":"select * from product where productID = 9;"},
- {"query":"select * from product where unitsInStock < 10"}
+ {"query":"select * from product where unitsInStock < 10;"}
 ];
