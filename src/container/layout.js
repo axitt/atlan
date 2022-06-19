@@ -49,9 +49,9 @@ function PageLayout(){
                 <Col span={24}>
                   <div className="controlNav">
                     <Row justify="end" className="featureBtn" align="middle">
-                      <Col style={{marginRight:'14px'}}><Tooltip placement="bottom" title="Copy"><i onClick={copy} className="far fa-copy "></i></Tooltip></Col>
-                      <Col style={{marginRight:'14px'}}><Tooltip placement="bottom" title="Clear"><i onClick={ () => {setQuery('');setToggleRes(false);message.success('Cleared');}} className="fas fa-trash-alt"></i></Tooltip></Col>
-                      <Col style={{marginRight:'14px'}}><Tooltip placement="bottom" title="History"><i onClick={showDrawer} className='fas fa-history'></i>
+                      <Col style={{marginRight:'14px'}}><Tooltip placement="bottom" title="Copy"><i onClick={copy} className="fa fa-copy "></i></Tooltip></Col>
+                      <Col style={{marginRight:'14px'}}><Tooltip placement="bottom" title="Clear"><i onClick={ () => {setQuery('');setToggleRes(false);message.success('Cleared');}} className="fa fa-trash"></i></Tooltip></Col>
+                      <Col style={{marginRight:'14px'}}><Tooltip placement="bottom" title="History"><i onClick={showDrawer} className='fa fa-history'></i>
                         <Drawer title="History" placement="right" onClose={onClose} visible={visible}>
                           {history.map((e, i) => (
                             <p className='historyPara' onClick={async()=>{
