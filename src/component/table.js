@@ -15,7 +15,7 @@ const columns = [
   },
   {
     title: 'productName',
-    width: 200,
+    width: 180,
     dataIndex: 'productName',
     key: 'productName',
     fixed: 'left',
